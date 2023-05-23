@@ -1,0 +1,4 @@
+<h2><%= @tasks.title %></h2>
+<p><%= @tasks.details %></p>
+<p><%= check_box_tag "completed[]", @tasks.id, @tasks.completed %><%= @tasks.title %></p>
+<p><%= link_to 'Back to Task List', tasks_path %></p>
